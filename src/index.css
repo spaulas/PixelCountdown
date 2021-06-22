@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'RetroGaming';
+  src: local('RetroGaming'),
+       url('./fonts/RetroGaming.ttf') format('ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'RetroGaming';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

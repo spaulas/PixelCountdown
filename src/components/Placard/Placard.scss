@@ -1,6 +1,6 @@
 .placard {
   width: 924px;
-  height: 537px;
+  height: 354px;
   padding: 100px 0 100px 0;
   position: relative;
 
@@ -32,23 +32,23 @@
     }
 
     47% {
-      top: 570px;
+      top: 390px;
       left: 870px;
       transform: rotate(90deg);
     }
     50% {
-      top: 630px;
+      top: 450px;
       left: 820px;
       transform: rotate(180deg);
     }
 
     77% {
-      top: 630px;
+      top: 450px;
       left: -90px;
       transform: rotate(180deg);
     }
     80% {
-      top: 570px;
+      top: 390px;
       left: -140px;
       transform: rotate(270deg);
     }

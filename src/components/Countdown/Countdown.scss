@@ -4,5 +4,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 72px;
+
+  &-unit {
+    margin-right: 32px;
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    position: relative;
+    justify-content: center;
+
+    &:not(:last-child)::after {
+      content: "";
+      background: black;
+      position: absolute;
+      right: -21px;
+      height: 124px;
+      width: 10px;
+    }
+  }
+
+  &-unit__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > h2 {
+      font-size: 72px;
+      margin: 0;
+    }
+
+    & > h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
 }

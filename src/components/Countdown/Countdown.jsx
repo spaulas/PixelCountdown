@@ -2,37 +2,51 @@ import React, { useState } from "react";
 import "./Countdown.scss";
 
 const Countdown = () => {
-  const [timer, setTimer] = useState("");
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jun 27, 2021 15:00:00").getTime();
+  const [timer, setTimer] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
-  // Update the count down every 1 second
-  var x = setInterval(function () {
-    // Get today's date and time
-    var now = new Date().getTime();
+  const countdownDate = new Date("Jun 27, 2021 15:00:00").getTime();
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+  const interval = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const days = Math.floor(distance / (1000 * 3600 * 24));
+    const hours = Math.floor((distance % (1000 * 3600 * 24)) / (1000 * 3600));
+    const minutes = Math.floor((distance % (1000 * 3600)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
-    setTimer(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
-
-    // If the count down is over, write some text
-    /* if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    } */
+    if (distance < 0) {
+      clearInterval(interval);
+      setTimer({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+    } else {
+      setTimer({ days, hours, minutes, seconds });
+    }
   }, 1000);
 
-  return <div className="countdown">{timer}</div>;
+  const convertNumber = (number) => {
+    if (number < 10) {
+      return `0${number}`;
+    }
+    return number;
+  };
+
+  return (
+    <div className="countdown">
+      {Object.keys(timer).map((key) => (
+        <div className="countdown-unit">
+          <div className="countdown-unit__column">
+            <h2>{convertNumber(timer[key])}</h2>
+            <h3>{key}</h3>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Countdown;

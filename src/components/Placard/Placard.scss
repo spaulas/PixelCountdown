@@ -1,0 +1,77 @@
+.placard {
+  width: 924px;
+  height: 537px;
+  padding: 100px 0 100px 0;
+  position: relative;
+
+  &-board {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    background-image: url("../../assets/Placard.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @keyframes dogRunning {
+    0% {
+      top: 0;
+      left: 0;
+      transform: rotate(0);
+    }
+
+    30% {
+      top: 0;
+      left: 820px;
+      transform: rotate(0);
+    }
+    33% {
+      top: 50px;
+      left: 870px;
+      transform: rotate(90deg);
+    }
+
+    47% {
+      top: 570px;
+      left: 870px;
+      transform: rotate(90deg);
+    }
+    50% {
+      top: 630px;
+      left: 820px;
+      transform: rotate(180deg);
+    }
+
+    77% {
+      top: 630px;
+      left: -90px;
+      transform: rotate(180deg);
+    }
+    80% {
+      top: 570px;
+      left: -140px;
+      transform: rotate(270deg);
+    }
+
+    97% {
+      top: 50px;
+      left: -140px;
+      transform: rotate(270deg);
+    }
+    100% {
+      top: 0;
+      left: -70px;
+      transform: rotate(360deg);
+    }
+  }
+
+  &-animation {
+    position: absolute;
+    background-image: url("../../assets/dogRunningAnimation.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+    animation: dogRunning 6s linear infinite;
+  }
+}

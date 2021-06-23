@@ -17,6 +17,10 @@
       width: 140px;
     }
 
+    @media screen and (max-width: 848px) {
+      width: 100px;
+    }
+
     &:not(:last-child)::after {
       content: "";
       background: black;
@@ -27,6 +31,12 @@
 
       @media screen and (max-width: 1116px) {
         height: 90px;
+      }
+
+      @media screen and (max-width: 848px) {
+        right: -20px;
+        height: 72px;
+        width: 8px;
       }
     }
   }
@@ -42,6 +52,10 @@
       @media screen and (max-width: 1116px) {
         font-size: 50px;
       }
+
+      @media screen and (max-width: 848px) {
+        font-size: 38px;
+      }
     }
 
     & > h3 {
@@ -50,6 +64,9 @@
 
       @media screen and (max-width: 1116px) {
         font-size: 22px;
+      }
+      @media screen and (max-width: 848px) {
+        font-size: 18px;
       }
     }
   }

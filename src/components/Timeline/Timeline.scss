@@ -12,6 +12,11 @@
     width: 700px;
   }
 
+  @media screen and (max-width: 848px) {
+    width: 550px;
+    background-position: 50% 63%;
+  }
+
   &__container {
     position: relative;
   }
@@ -23,12 +28,20 @@
       @media screen and (max-width: 1116px) {
         margin-left: -60px;
       }
+
+      @media screen and (max-width: 848px) {
+        margin-left: -45px;
+      }
     }
     &:nth-child(2) {
       margin-left: 265px;
 
       @media screen and (max-width: 1116px) {
         margin-left: 202px;
+      }
+
+      @media screen and (max-width: 848px) {
+        margin-left: 163px;
       }
     }
     &:nth-child(3) {
@@ -39,6 +52,9 @@
 
       @media screen and (max-width: 1116px) {
         margin-left: 133px;
+      }
+      @media screen and (max-width: 848px) {
+        margin-left: 108px;
       }
     }
   }
@@ -54,6 +70,11 @@
     @media screen and (max-width: 1116px) {
       top: 75px;
       height: 76px;
+    }
+
+    @media screen and (max-width: 848px) {
+      top: 61px;
+      height: 60px;
     }
   }
 }

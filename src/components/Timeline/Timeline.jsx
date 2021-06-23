@@ -15,7 +15,7 @@ const Timeline = () => {
   const timelineElements = [
     {
       image: sushiPlus,
-      title: "Sushi needs a brother!",
+      title: "Sushi is too alone!",
       date: "12/01/2021",
       active: true,
     },

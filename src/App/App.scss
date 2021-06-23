@@ -5,6 +5,7 @@
   height: 100vh;
   min-height: 940px;
   overflow: hidden;
+  min-width: 320px;
 
   @media screen and (max-width: 1116px) {
     min-height: 822px;

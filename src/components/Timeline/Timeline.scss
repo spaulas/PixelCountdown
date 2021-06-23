@@ -22,6 +22,11 @@
     background-position: 50% 58%;
   }
 
+  @media screen and (max-width: 526px) {
+    width: 242px;
+    background-position: 50% 58%;
+  }
+
   &__container {
     position: relative;
   }
@@ -41,6 +46,10 @@
       @media screen and (max-width: 706px) {
         margin-left: -35px;
       }
+
+      @media screen and (max-width: 526px) {
+        margin-left: -30px;
+      }
     }
     &:nth-child(2) {
       margin-left: 265px;
@@ -56,9 +65,15 @@
       @media screen and (max-width: 706px) {
         margin-left: 116px;
       }
+      @media screen and (max-width: 526px) {
+        margin-left: 52px;
+      }
     }
     &:nth-child(3) {
       margin-left: 5px;
+      @media screen and (max-width: 526px) {
+        margin-left: 2px;
+      }
     }
     &:nth-child(4) {
       margin-left: 178px;
@@ -71,6 +86,9 @@
       }
       @media screen and (max-width: 706px) {
         margin-left: 76px;
+      }
+      @media screen and (max-width: 526px) {
+        margin-left: 0px;
       }
     }
   }
@@ -94,8 +112,13 @@
     }
 
     @media screen and (max-width: 706px) {
-      top: 44px;
+      top: 43px;
       height: 44px;
+    }
+
+    @media screen and (max-width: 526px) {
+      top: 27px;
+      height: 28px;
     }
   }
 }

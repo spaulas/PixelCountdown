@@ -28,6 +28,11 @@
     height: 154px;
   }
 
+  @media screen and (max-width: 526px) {
+    width: 242px;
+    height: 92px;
+  }
+
   @keyframes dogRunningDesktop {
     0% {
       top: 0;
@@ -236,6 +241,58 @@
     }
   }
 
+  @keyframes dogRunningMobile {
+    0% {
+      top: 60px;
+      left: 0;
+      transform: rotate(0);
+    }
+
+    30% {
+      top: 60px;
+      left: 200px;
+      transform: rotate(0);
+    }
+    33% {
+      top: 80px;
+      left: 220px;
+      transform: rotate(90deg);
+    }
+
+    47% {
+      top: 170px;
+      left: 220px;
+      transform: rotate(90deg);
+    }
+    50% {
+      top: 190px;
+      left: 200px;
+      transform: rotate(180deg);
+    }
+
+    77% {
+      top: 190px;
+      left: -40px;
+      transform: rotate(180deg);
+    }
+    80% {
+      top: 170px;
+      left: -60px;
+      transform: rotate(270deg);
+    }
+
+    97% {
+      top: 70px;
+      left: -60px;
+      transform: rotate(270deg);
+    }
+    100% {
+      top: 60px;
+      left: -20px;
+      transform: rotate(360deg);
+    }
+  }
+
   &-animation {
     position: absolute;
     background-image: url("../../assets/dogRunningAnimation.gif");
@@ -261,6 +318,12 @@
       width: 120px;
       height: 60px;
       animation: dogRunningTM 6s linear infinite;
+    }
+
+    @media screen and (max-width: 526px) {
+      width: 80px;
+      height: 40px;
+      animation: dogRunningMobile 6s linear infinite;
     }
   }
 }

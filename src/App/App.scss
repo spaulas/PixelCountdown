@@ -1,0 +1,16 @@
+.App {
+  background-image: url("../assets/PawPattern.png");
+  background-color: #ffcd59;
+  width: 100vw;
+  height: 100vh;
+  min-height: 940px;
+  overflow: hidden;
+
+  @media screen and (max-width: 1116px) {
+    min-height: 822px;
+  }
+
+  @media screen and (max-width: 848px) {
+    min-height: 728px;
+  }
+}

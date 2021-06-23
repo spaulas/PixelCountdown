@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pixel-countdown/static/css/main.cc8f615b.chunk.css",
+    "main.css": "/pixel-countdown/static/css/main.c29bd6ff.chunk.css",
     "main.js": "/pixel-countdown/static/js/main.3e852166.chunk.js",
     "main.js.map": "/pixel-countdown/static/js/main.3e852166.chunk.js.map",
     "runtime-main.js": "/pixel-countdown/static/js/runtime-main.7b360f87.js",
@@ -8,7 +8,7 @@
     "static/js/2.fc4aa67c.chunk.js": "/pixel-countdown/static/js/2.fc4aa67c.chunk.js",
     "static/js/2.fc4aa67c.chunk.js.map": "/pixel-countdown/static/js/2.fc4aa67c.chunk.js.map",
     "index.html": "/pixel-countdown/index.html",
-    "static/css/main.cc8f615b.chunk.css.map": "/pixel-countdown/static/css/main.cc8f615b.chunk.css.map",
+    "static/css/main.c29bd6ff.chunk.css.map": "/pixel-countdown/static/css/main.c29bd6ff.chunk.css.map",
     "static/js/2.fc4aa67c.chunk.js.LICENSE.txt": "/pixel-countdown/static/js/2.fc4aa67c.chunk.js.LICENSE.txt",
     "static/media/Born.7676b1f9.png": "/pixel-countdown/static/media/Born.7676b1f9.png",
     "static/media/index.css": "/pixel-countdown/static/media/RetroGaming.c1a52a60.ttf",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.7b360f87.js",
     "static/js/2.fc4aa67c.chunk.js",
-    "static/css/main.cc8f615b.chunk.css",
+    "static/css/main.c29bd6ff.chunk.css",
     "static/js/main.3e852166.chunk.js"
   ]
 }

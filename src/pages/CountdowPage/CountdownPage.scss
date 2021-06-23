@@ -8,5 +8,9 @@
     font-size: 64px;
     margin: 0;
     background-color: #ffcd59;
+
+    @media screen and (max-width: 1116px) {
+      font-size: 48px;
+    }
   }
 }

@@ -13,6 +13,10 @@
     position: relative;
     justify-content: center;
 
+    @media screen and (max-width: 1116px) {
+      width: 140px;
+    }
+
     &:not(:last-child)::after {
       content: "";
       background: black;
@@ -20,6 +24,10 @@
       right: -21px;
       height: 124px;
       width: 10px;
+
+      @media screen and (max-width: 1116px) {
+        height: 90px;
+      }
     }
   }
 
@@ -30,11 +38,19 @@
     & > h2 {
       font-size: 72px;
       margin: 0;
+
+      @media screen and (max-width: 1116px) {
+        font-size: 50px;
+      }
     }
 
     & > h3 {
       font-size: 24px;
       margin: 0;
+
+      @media screen and (max-width: 1116px) {
+        font-size: 22px;
+      }
     }
   }
 }

@@ -8,6 +8,10 @@
   background-size: contain;
   background-position: 50% 59%;
 
+  @media screen and (max-width: 1116px) {
+    width: 700px;
+  }
+
   &__container {
     position: relative;
   }
@@ -15,24 +19,41 @@
   &-element {
     &:nth-child(1) {
       margin-left: -80px;
+
+      @media screen and (max-width: 1116px) {
+        margin-left: -60px;
+      }
     }
     &:nth-child(2) {
       margin-left: 265px;
+
+      @media screen and (max-width: 1116px) {
+        margin-left: 202px;
+      }
     }
     &:nth-child(3) {
       margin-left: 5px;
     }
     &:nth-child(4) {
       margin-left: 178px;
+
+      @media screen and (max-width: 1116px) {
+        margin-left: 133px;
+      }
     }
   }
 
   &-progress {
-      position: absolute;
-      top:98px;
-      left:0;
-      height: 100px;
-      background-color: #FF7D09;
-      z-index: 0;
+    position: absolute;
+    top: 98px;
+    left: 0;
+    height: 100px;
+    background-color: #ff7d09;
+    z-index: 0;
+
+    @media screen and (max-width: 1116px) {
+      top: 75px;
+      height: 76px;
+    }
   }
 }

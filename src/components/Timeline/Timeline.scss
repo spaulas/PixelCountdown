@@ -17,6 +17,11 @@
     background-position: 50% 63%;
   }
 
+  @media screen and (max-width: 706px) {
+    width: 406px;
+    background-position: 50% 58%;
+  }
+
   &__container {
     position: relative;
   }
@@ -32,6 +37,10 @@
       @media screen and (max-width: 848px) {
         margin-left: -45px;
       }
+
+      @media screen and (max-width: 706px) {
+        margin-left: -35px;
+      }
     }
     &:nth-child(2) {
       margin-left: 265px;
@@ -42,6 +51,10 @@
 
       @media screen and (max-width: 848px) {
         margin-left: 163px;
+      }
+
+      @media screen and (max-width: 706px) {
+        margin-left: 116px;
       }
     }
     &:nth-child(3) {
@@ -55,6 +68,9 @@
       }
       @media screen and (max-width: 848px) {
         margin-left: 108px;
+      }
+      @media screen and (max-width: 706px) {
+        margin-left: 76px;
       }
     }
   }
@@ -75,6 +91,11 @@
     @media screen and (max-width: 848px) {
       top: 61px;
       height: 60px;
+    }
+
+    @media screen and (max-width: 706px) {
+      top: 44px;
+      height: 44px;
     }
   }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Countdown.scss";
+import getDistance from "../../utils/getDistance";
 
 const Countdown = () => {
   const [timer, setTimer] = useState({
@@ -9,11 +10,8 @@ const Countdown = () => {
     seconds: 0,
   });
 
-  const countdownDate = new Date("Jun 27, 2021 15:00:00").getTime();
-
   const interval = setInterval(function () {
-    const now = new Date().getTime();
-    const distance = countdownDate - now;
+    const distance = getDistance();
 
     const days = Math.floor(distance / (1000 * 3600 * 24));
     const hours = Math.floor((distance % (1000 * 3600 * 24)) / (1000 * 3600));

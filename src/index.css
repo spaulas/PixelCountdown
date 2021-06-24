@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'RetroGaming';
   src: local('RetroGaming'),
-       url('./fonts/RetroGaming.ttf') format('ttf');
+       url('./fonts/RetroGaming.ttf') format('truetype');
 }
 
 body {

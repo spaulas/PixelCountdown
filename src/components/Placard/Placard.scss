@@ -13,22 +13,22 @@
     background-size: cover;
   }
 
-  @media screen and (max-width: 1116px) {
+  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
     width: 700px;
     height: 268px;
   }
 
-  @media screen and (max-width: 848px) {
+  @media screen and (max-width: 848px), screen and (max-height: 822px) {
     width: 550px;
     height: 210px;
   }
 
-  @media screen and (max-width: 706px) {
+  @media screen and (max-width: 706px), screen and (max-height: 728px) {
     width: 406px;
     height: 154px;
   }
 
-  @media screen and (max-width: 526px) {
+  @media screen and (max-width: 526px), screen and (max-height: 618px) {
     width: 242px;
     height: 92px;
   }
@@ -302,25 +302,25 @@
     height: 100px;
     animation: dogRunningDesktop 6s linear infinite;
 
-    @media screen and (max-width: 1116px) {
+    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
       width: 160px;
       height: 80px;
       animation: dogRunningTL 6s linear infinite;
     }
 
-    @media screen and (max-width: 848px) {
+    @media screen and (max-width: 848px), screen and (max-height: 822px) {
       width: 140px;
       height: 70px;
       animation: dogRunningTP 6s linear infinite;
     }
 
-    @media screen and (max-width: 706px) {
+    @media screen and (max-width: 706px), screen and (max-height: 728px) {
       width: 120px;
       height: 60px;
       animation: dogRunningTM 6s linear infinite;
     }
 
-    @media screen and (max-width: 526px) {
+    @media screen and (max-width: 526px), screen and (max-height: 618px) {
       width: 80px;
       height: 40px;
       animation: dogRunningMobile 6s linear infinite;

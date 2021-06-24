@@ -6,7 +6,7 @@
   height: 100%;
   justify-content: space-around;
 
-  @media screen and (max-width: 1116px) {
+  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
     justify-content: space-around;
   }
 
@@ -15,29 +15,29 @@
     margin: 0;
     background-color: #ffcd59;
 
-    @media screen and (max-width: 1116px) {
+    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
       font-size: 48px;
     }
 
-    @media screen and (max-width: 848px) {
+    @media screen and (max-width: 848px), screen and (max-height: 822px) {
       font-size: 36px;
     }
 
-    @media screen and (max-width: 706px) {
+    @media screen and (max-width: 706px), screen and (max-height: 728px) {
       font-size: 24px;
     }
 
-    @media screen and (max-width: 526px) {
+    @media screen and (max-width: 526px), screen and (max-height: 618px) {
       font-size: 16px;
     }
   }
 
   & > .placard {
-    @media screen and (max-width: 1116px) {
+    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
       margin-top: 24px;
     }
 
-    @media screen and (max-width: 848px) {
+    @media screen and (max-width: 848px), screen and (max-height: 822px) {
       margin-top: 48px;
     }
   }
@@ -46,7 +46,7 @@
     margin-top: auto;
     margin-bottom: 32px;
 
-    @media screen and (max-width: 1116px) {
+    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
       margin-top: unset;
       margin-bottom: 64px;
     }

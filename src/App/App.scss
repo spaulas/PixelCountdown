@@ -7,19 +7,19 @@
   overflow: hidden;
   min-width: 320px;
 
-  @media screen and (max-width: 1116px) {
+  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
     min-height: 822px;
   }
 
-  @media screen and (max-width: 848px) {
+  @media screen and (max-width: 848px), screen and (max-height: 822px) {
     min-height: 728px;
   }
 
-  @media screen and (max-width: 706px) {
+  @media screen and (max-width: 706px), screen and (max-height: 728px) {
     min-height: 618px;
   }
 
-  @media screen and (max-width: 526px) {
+  @media screen and (max-width: 526px), screen and (max-height: 618px)  {
     min-height: 502px;
   }
 }

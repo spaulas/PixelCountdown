@@ -13,20 +13,20 @@
     position: relative;
     justify-content: center;
 
-    @media screen and (max-width: 1116px) {
+    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
       width: 140px;
     }
 
-    @media screen and (max-width: 848px) {
+    @media screen and (max-width: 848px), screen and (max-height: 822px) {
       width: 100px;
     }
 
-    @media screen and (max-width: 706px) {
+    @media screen and (max-width: 706px), screen and (max-height: 728px) {
       width: 70px;
       margin-right: 24px;
     }
 
-    @media screen and (max-width: 526px) {
+    @media screen and (max-width: 526px), screen and (max-height: 618px) {
       width: 50px;
       margin-right: 10px;
     }
@@ -39,23 +39,23 @@
       height: 124px;
       width: 10px;
 
-      @media screen and (max-width: 1116px) {
+      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
         height: 90px;
       }
 
-      @media screen and (max-width: 848px) {
+      @media screen and (max-width: 848px), screen and (max-height: 822px) {
         right: -20px;
         height: 72px;
         width: 8px;
       }
 
-      @media screen and (max-width: 706px) {
+      @media screen and (max-width: 706px), screen and (max-height: 728px) {
         right: -13px;
         height: 46px;
         width: 6px;
       }
 
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 526px), screen and (max-height: 618px) {
         right: -6px;
         height: 30px;
         width: 4px;
@@ -71,19 +71,19 @@
       font-size: 72px;
       margin: 0;
 
-      @media screen and (max-width: 1116px) {
+      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
         font-size: 50px;
       }
 
-      @media screen and (max-width: 848px) {
+      @media screen and (max-width: 848px), screen and (max-height: 822px) {
         font-size: 38px;
       }
 
-      @media screen and (max-width: 706px) {
+      @media screen and (max-width: 706px), screen and (max-height: 728px) {
         font-size: 24px;
       }
 
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 526px), screen and (max-height: 618px) {
         font-size: 16px;
       }
     }
@@ -92,16 +92,16 @@
       font-size: 24px;
       margin: 0;
 
-      @media screen and (max-width: 1116px) {
+      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
         font-size: 22px;
       }
-      @media screen and (max-width: 848px) {
+      @media screen and (max-width: 848px), screen and (max-height: 822px) {
         font-size: 18px;
       }
-      @media screen and (max-width: 706px) {
+      @media screen and (max-width: 706px), screen and (max-height: 728px) {
         font-size: 12px;
       }
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 526px), screen and (max-height: 618px) {
         font-size: 8px;
       }
     }

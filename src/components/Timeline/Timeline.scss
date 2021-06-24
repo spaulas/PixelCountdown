@@ -8,21 +8,21 @@
   background-size: contain;
   background-position: 50% 59%;
 
-  @media screen and (max-width: 1116px) {
+  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
     width: 700px;
   }
 
-  @media screen and (max-width: 848px) {
+  @media screen and (max-width: 848px), screen and (max-height: 822px) {
     width: 550px;
     background-position: 50% 63%;
   }
 
-  @media screen and (max-width: 706px) {
+  @media screen and (max-width: 706px), screen and (max-height: 728px) {
     width: 406px;
     background-position: 50% 58%;
   }
 
-  @media screen and (max-width: 526px) {
+  @media screen and (max-width: 526px), screen and (max-height: 618px) {
     width: 242px;
     background-position: 50% 58%;
   }
@@ -35,59 +35,59 @@
     &:nth-child(1) {
       margin-left: -80px;
 
-      @media screen and (max-width: 1116px) {
+      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
         margin-left: -60px;
       }
 
-      @media screen and (max-width: 848px) {
+      @media screen and (max-width: 848px), screen and (max-height: 822px) {
         margin-left: -45px;
       }
 
-      @media screen and (max-width: 706px) {
+      @media screen and (max-width: 706px), screen and (max-height: 728px) {
         margin-left: -35px;
       }
 
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 526px), screen and (max-height: 618px) {
         margin-left: -30px;
       }
     }
     &:nth-child(2) {
       margin-left: 265px;
 
-      @media screen and (max-width: 1116px) {
+      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
         margin-left: 202px;
       }
 
-      @media screen and (max-width: 848px) {
+      @media screen and (max-width: 848px), screen and (max-height: 822px) {
         margin-left: 163px;
       }
 
-      @media screen and (max-width: 706px) {
+      @media screen and (max-width: 706px), screen and (max-height: 728px) {
         margin-left: 116px;
       }
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 526px), screen and (max-height: 618px) {
         margin-left: 52px;
       }
     }
     &:nth-child(3) {
       margin-left: 5px;
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 526px), screen and (max-height: 618px) {
         margin-left: 2px;
       }
     }
     &:nth-child(4) {
       margin-left: 178px;
 
-      @media screen and (max-width: 1116px) {
+      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
         margin-left: 133px;
       }
-      @media screen and (max-width: 848px) {
+      @media screen and (max-width: 848px), screen and (max-height: 822px) {
         margin-left: 108px;
       }
-      @media screen and (max-width: 706px) {
+      @media screen and (max-width: 706px), screen and (max-height: 728px) {
         margin-left: 76px;
       }
-      @media screen and (max-width: 526px) {
+      @media screen and (max-width: 526px), screen and (max-height: 618px) {
         margin-left: 0px;
       }
     }
@@ -101,22 +101,22 @@
     background-color: #ff7d09;
     z-index: 0;
 
-    @media screen and (max-width: 1116px) {
+    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
       top: 75px;
       height: 76px;
     }
 
-    @media screen and (max-width: 848px) {
+    @media screen and (max-width: 848px), screen and (max-height: 822px) {
       top: 61px;
       height: 60px;
     }
 
-    @media screen and (max-width: 706px) {
+    @media screen and (max-width: 706px), screen and (max-height: 728px) {
       top: 43px;
       height: 44px;
     }
 
-    @media screen and (max-width: 526px) {
+    @media screen and (max-width: 526px), screen and (max-height: 618px) {
       top: 27px;
       height: 28px;
     }

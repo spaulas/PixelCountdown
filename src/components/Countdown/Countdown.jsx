@@ -1,33 +1,8 @@
-import React, { useState } from "react";
 import "./Countdown.scss";
-import getDistance from "../../utils/getDistance";
 
-const Countdown = () => {
-  const [timer, setTimer] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
-
-  const interval = setInterval(function () {
-    const distance = getDistance();
-
-    const days = Math.floor(distance / (1000 * 3600 * 24));
-    const hours = Math.floor((distance % (1000 * 3600 * 24)) / (1000 * 3600));
-    const minutes = Math.floor((distance % (1000 * 3600)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    if (distance < 0) {
-      clearInterval(interval);
-      setTimer({ days: "00", hours: "00", minutes: "00", seconds: "00" });
-    } else {
-      setTimer({ days, hours, minutes, seconds });
-    }
-  }, 1000);
-
+const Countdown = ({ timer }) => {
   const convertNumber = (number) => {
-    if (number < 10) {
+    if (number < 10 && typeof number === "number") {
       return `0${number}`;
     }
     return number;

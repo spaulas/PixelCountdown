@@ -2,11 +2,11 @@ import React from "react";
 import "./Placard.scss";
 import Countdown from "../Countdown/Countdown";
 
-const Placard = () => {
+const Placard = ({ timer }) => {
   return (
     <div className="placard">
       <div className="placard-board">
-        <Countdown />
+        <Countdown timer={timer} />
       </div>
       <div className="placard-animation" />
     </div>

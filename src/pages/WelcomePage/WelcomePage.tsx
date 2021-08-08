@@ -1,6 +1,6 @@
 import { useContext} from "react";
 import "./WelcomePage.scss";
-import { ShowTimelineContext } from "../../utils/ShowTimelineProvider";
+import { ShowTimelineContext } from "../../providers/ShowTimelineProvider";
 
 const WelcomePage = () => {
   const { setShowTimeline } = useContext(ShowTimelineContext);

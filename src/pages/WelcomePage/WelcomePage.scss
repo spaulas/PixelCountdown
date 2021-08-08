@@ -7,15 +7,38 @@
   background-size: cover;
   animation: show 0.5s linear 1;
 
+  /*   @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    min-height: 822px;
+  } */
+
   &__family {
     background-image: url("../../assets/FamilyAnimation.gif");
     background-repeat: no-repeat;
     background-size: contain;
     height: 360px;
-    width: 400px;
+    width: 352px;
     position: absolute;
-    left: 55%;
-    top: 40%;
+    left: 58%;
+    top: 44%;
+
+    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      height: 290px;
+      width: 284px;
+      left: 58%;
+      top: 45%;
+    }
+    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      height: 260px;
+      width: 254px;
+      left: 53%;
+      top: 48%;
+    }
+    @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      height: 226px;
+      width: 222px;
+      left: 30%;
+      top: 42%;
+    }
   }
 
   button {
@@ -33,10 +56,10 @@
 
 @keyframes show {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }

@@ -16,6 +16,7 @@ const CountdownPage = () => {
   });
   const [distance, setDistance] = useState(0);
   const [counter, setCounter] = useState(0);
+  const [animation, setAnimation] = useState("");
   const timeInterval = showTimeline ? 100 : 1000;
 
   useEffect(() => {
@@ -30,6 +31,7 @@ const CountdownPage = () => {
 
         if (distance <= 0) {
           setTimer({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+          setAnimation("countdown-page--hide");
           setTimeout(() => setShowTimeline(false), 2000);
         } else {
           setTimer({ days, hours, minutes, seconds });
@@ -43,7 +45,7 @@ const CountdownPage = () => {
   }, [timer]);
 
   return (
-    <div className="countdown-page">
+    <div className={`countdown-page ${animation}`}>
       <h1>PIXEL IS COMING HOME!</h1>
       <Placard timer={timer} />
       <Timeline distance={distance} />

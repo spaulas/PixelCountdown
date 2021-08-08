@@ -10,6 +10,10 @@
     justify-content: space-around;
   }
 
+  &--hide {
+    animation: hide 0.5s linear 1.5s 1 forwards;
+  }
+
   & > h1 {
     font-size: 64px;
     margin: 0;
@@ -50,5 +54,15 @@
       margin-top: unset;
       margin-bottom: 64px;
     }
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }

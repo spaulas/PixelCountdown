@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  animation: show 0.5s linear 1;
 
   &__family {
     background-image: url("../../assets/FamilyAnimation.gif");
@@ -27,5 +28,15 @@
     cursor: pointer;
     font-size: 16px;
     padding: 16px;
+  }
+}
+
+@keyframes show {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
   }
 }

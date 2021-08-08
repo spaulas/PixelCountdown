@@ -1,0 +1,31 @@
+.welcome-page {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/WelcomeBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__family {
+    background-image: url("../../assets/FamilyAnimation.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 360px;
+    width: 400px;
+    position: absolute;
+    left: 55%;
+    top: 40%;
+  }
+
+  button {
+    margin-top: 32px;
+    margin-left: 32px;
+    font-family: "RetroGaming";
+    border: 1px solid #84c2ff;
+    background-color: #ffffff;
+    color: #84c2ff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px;
+  }
+}

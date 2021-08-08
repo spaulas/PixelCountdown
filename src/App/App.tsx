@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./App.scss";
 import CountdownPage from "../pages/CountdowPage/CountdownPage";
+import WelcomePage from "../pages/WelcomePage/WelcomePage";
+import { ShowTimelineContext } from "../utils/ShowTimelineProvider";
 
 function App() {
+  const { showTimeline } = useContext(ShowTimelineContext);
+
   return (
     <div className="App">
-      <CountdownPage />
+      {showTimeline ? <CountdownPage /> : <WelcomePage />}
     </div>
   );
 }

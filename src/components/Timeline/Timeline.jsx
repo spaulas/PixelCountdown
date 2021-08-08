@@ -35,7 +35,7 @@ const Timeline = () => {
       image: pixel,
       title: "Welcome Pixel!",
       date: "27/05/2021",
-      active: distance < 0,
+      active: distance === 0,
     },
   ];
 

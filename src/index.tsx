@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App/App';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App/App";
+import ShowTimelineProvider from "./utils/ShowTimelineProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ShowTimelineProvider>
+      <App />
+    </ShowTimelineProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

@@ -1,3 +1,5 @@
+@import "../../../styles/global.scss";
+
 .timeline-element {
   display: flex;
   flex-direction: column;
@@ -8,25 +10,29 @@
   max-width: 160px;
   z-index: 1;
 
-  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+  @media screen and (max-width: $desktopWidth),
+    screen and (max-height: $desktopHeight) {
     height: 205px;
     width: 120px;
     max-width: 120px;
   }
 
-  @media screen and (max-width: 848px), screen and (max-height: 822px) {
+  @media screen and (max-width: $tabletLandscapeWidth),
+    screen and (max-height: $tabletLandscapeHeight) {
     height: 160px;
     width: 90px;
     max-width: 90px;
   }
 
-  @media screen and (max-width: 706px), screen and (max-height: 728px) {
+  @media screen and (max-width: $tabletPortraitWidth),
+    screen and (max-height: $tabletPortraitHeight) {
     height: 120px;
     width: 70px;
     max-width: 70px;
   }
 
-  @media screen and (max-width: 526px), screen and (max-height: 618px) {
+  @media screen and (max-width: $mobileWidth),
+    screen and (max-height: $mobileHeight) {
     height: 76px;
     width: 60px;
     max-width: 60px;
@@ -36,23 +42,27 @@
   &__date {
     width: 160px;
     text-align: center;
-    background-color: #ffcd59;
+    background-color: $orange-light;
     opacity: 0;
     transition: all 1s;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       width: 120px;
     }
 
-    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+    @media screen and (max-width: $tabletLandscapeWidth),
+      screen and (max-height: $tabletLandscapeHeight) {
       width: 90px;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth),
+      screen and (max-height: $tabletPortraitHeight) {
       width: 70px;
     }
 
-    @media screen and (max-width: 526px), screen and (max-height: 618px) {
+    @media screen and (max-width: $mobileWidth),
+      screen and (max-height: $mobileHeight) {
       width: 60px;
     }
   }
@@ -62,13 +72,15 @@
     margin-bottom: 16px;
     height: 50px;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       font-size: 14px;
       margin-bottom: 8px;
       height: 42px;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth),
+      screen and (max-height: $tabletPortraitHeight) {
       font-size: 9px;
       height: 26px;
     }
@@ -78,12 +90,14 @@
     font-size: 16px;
     margin-top: 16px;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       font-size: 12px;
       margin-top: 8px;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth),
+      screen and (max-height: $tabletPortraitHeight) {
       font-size: 9px;
     }
   }
@@ -91,7 +105,7 @@
   &__image {
     width: 120px;
     height: 120px;
-    background-color: #c4097d; // 0980ff
+    background-color: $pink; // 0980ff
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -99,25 +113,29 @@
     border: 8px solid black;
     transition: all 1s;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       width: 100px;
       height: 100px;
       border-width: 5px;
     }
 
-    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+    @media screen and (max-width: $tabletLandscapeWidth),
+      screen and (max-height: $tabletLandscapeHeight) {
       width: 80px;
       height: 80px;
       border-width: 4px;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth),
+      screen and (max-height: $tabletPortraitHeight) {
       width: 60px;
       height: 60px;
       border-width: 2px;
     }
 
-    @media screen and (max-width: 526px), screen and (max-height: 618px) {
+    @media screen and (max-width: $mobileWidth),
+      screen and (max-height: $mobileHeight) {
       width: 46px;
       height: 46px;
       min-height: 46px;
@@ -128,19 +146,23 @@
       height: auto;
       transition: all 1s;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth),
+        screen and (max-height: $desktopHeight) {
         width: 90px;
       }
 
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth),
+        screen and (max-height: $tabletLandscapeHeight) {
         width: 70px;
       }
 
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth),
+        screen and (max-height: $tabletPortraitHeight) {
         width: 55px;
       }
 
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth),
+        screen and (max-height: $mobileHeight) {
         width: 40px;
         max-height: 40px;
       }
@@ -149,7 +171,7 @@
 
   &--active & {
     &__image {
-      background-color: #ff7d09;
+      background-color: $orange;
     }
   }
 
@@ -158,22 +180,26 @@
       width: 140px;
       height: 140px;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth),
+        screen and (max-height: $desktopHeight) {
         width: 120px;
         height: 120px;
       }
 
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth),
+        screen and (max-height: $tabletLandscapeHeight) {
         width: 100px;
         height: 100px;
       }
 
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth),
+        screen and (max-height: $tabletPortraitHeight) {
         width: 70px;
         height: 70px;
       }
 
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth),
+        screen and (max-height: $mobileHeight) {
         width: 54px;
         height: 54px;
         max-height: 54px;
@@ -183,17 +209,21 @@
       & > img {
         width: 110px;
 
-        @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+        @media screen and (max-width: $desktopWidth),
+          screen and (max-height: $desktopHeight) {
           width: 100px;
         }
 
-        @media screen and (max-width: 848px), screen and (max-height: 822px) {
+        @media screen and (max-width: $tabletLandscapeWidth),
+          screen and (max-height: $tabletLandscapeHeight) {
           width: 85px;
         }
-        @media screen and (max-width: 706px), screen and (max-height: 728px) {
+        @media screen and (max-width: $tabletPortraitWidth),
+          screen and (max-height: $tabletPortraitHeight) {
           width: 65px;
         }
-        @media screen and (max-width: 526px), screen and (max-height: 618px) {
+        @media screen and (max-width: $mobileWidth),
+          screen and (max-height: $mobileHeight) {
           width: 50px;
           max-height: 50px;
         }

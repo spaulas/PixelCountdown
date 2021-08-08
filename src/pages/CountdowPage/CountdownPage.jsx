@@ -5,7 +5,6 @@ import "./CountdownPage.scss";
 import { ShowTimelineContext } from "../../providers/ShowTimelineProvider";
 import getDistance from "../../utils/getDistance";
 
-// TODO ADD HIDE AND SHOW EFFECT
 const CountdownPage = () => {
   const { showTimeline, setShowTimeline } = useContext(ShowTimelineContext);
   const [timer, setTimer] = useState({

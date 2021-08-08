@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .countdown-page {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,8 @@
   height: 100%;
   justify-content: space-around;
 
-  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+  @media screen and (max-width: $desktopWidth),
+    screen and (max-height: $desktopHeight) {
     justify-content: space-around;
   }
 
@@ -17,31 +20,37 @@
   & > h1 {
     font-size: 64px;
     margin: 0;
-    background-color: #ffcd59;
+    background-color: $orange-light;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       font-size: 48px;
     }
 
-    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+    @media screen and (max-width: $tabletLandscapeWidth),
+      screen and (max-height: $tabletLandscapeHeight) {
       font-size: 36px;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth),
+      screen and (max-height: $tabletPortraitHeight) {
       font-size: 24px;
     }
 
-    @media screen and (max-width: 526px), screen and (max-height: 618px) {
+    @media screen and (max-width: $mobileWidth),
+      screen and (max-height: $mobileHeight) {
       font-size: 16px;
     }
   }
 
   & > .placard {
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       margin-top: 24px;
     }
 
-    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+    @media screen and (max-width: $tabletLandscapeWidth),
+      screen and (max-height: $tabletLandscapeHeight) {
       margin-top: 48px;
     }
   }
@@ -50,7 +59,8 @@
     margin-top: auto;
     margin-bottom: 32px;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       margin-top: unset;
       margin-bottom: 64px;
     }

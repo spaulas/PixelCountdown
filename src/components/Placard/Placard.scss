@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .placard {
   width: 924px;
   height: 354px;
@@ -13,22 +15,22 @@
     background-size: cover;
   }
 
-  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+  @media screen and (max-width: $desktopWidth), screen and (max-height: $desktopHeight) {
     width: 700px;
     height: 268px;
   }
 
-  @media screen and (max-width: 848px), screen and (max-height: 822px) {
+  @media screen and (max-width: $tabletLandscapeWidth), screen and (max-height: $tabletLandscapeHeight) {
     width: 550px;
     height: 210px;
   }
 
-  @media screen and (max-width: 706px), screen and (max-height: 728px) {
+  @media screen and (max-width: $tabletPortraitWidth), screen and (max-height: $tabletPortraitHeight) {
     width: 406px;
     height: 154px;
   }
 
-  @media screen and (max-width: 526px), screen and (max-height: 618px) {
+  @media screen and (max-width: $mobileWidth), screen and (max-height: $mobileHeight) {
     width: 242px;
     height: 92px;
   }
@@ -302,25 +304,25 @@
     height: 100px;
     animation: dogRunningDesktop 6s linear infinite;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth), screen and (max-height: $desktopHeight) {
       width: 160px;
       height: 80px;
       animation: dogRunningTL 6s linear infinite;
     }
 
-    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+    @media screen and (max-width: $tabletLandscapeWidth), screen and (max-height: $tabletLandscapeHeight) {
       width: 140px;
       height: 70px;
       animation: dogRunningTP 6s linear infinite;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth), screen and (max-height: $tabletPortraitHeight) {
       width: 120px;
       height: 60px;
       animation: dogRunningTM 6s linear infinite;
     }
 
-    @media screen and (max-width: 526px), screen and (max-height: 618px) {
+    @media screen and (max-width: $mobileWidth), screen and (max-height: $mobileHeight) {
       width: 80px;
       height: 40px;
       animation: dogRunningMobile 6s linear infinite;

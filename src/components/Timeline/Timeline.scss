@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .timeline {
   width: 924px;
   display: flex;
@@ -8,21 +10,25 @@
   background-size: contain;
   background-position: 50% 59%;
 
-  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+  @media screen and (max-width: $desktopWidth),
+    screen and (max-height: $desktopHeight) {
     width: 700px;
   }
 
-  @media screen and (max-width: 848px), screen and (max-height: 822px) {
+  @media screen and (max-width: $tabletLandscapeWidth),
+    screen and (max-height: $tabletLandscapeHeight) {
     width: 550px;
     background-position: 50% 63%;
   }
 
-  @media screen and (max-width: 706px), screen and (max-height: 728px) {
+  @media screen and (max-width: $tabletPortraitWidth),
+    screen and (max-height: $tabletPortraitHeight) {
     width: 406px;
     background-position: 50% 58%;
   }
 
-  @media screen and (max-width: 526px), screen and (max-height: 618px) {
+  @media screen and (max-width: $mobileWidth),
+    screen and (max-height: $mobileHeight) {
     width: 242px;
     background-position: 50% 58%;
   }
@@ -35,59 +41,72 @@
     &:nth-child(1) {
       margin-left: -80px;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth),
+        screen and (max-height: $desktopHeight) {
         margin-left: -60px;
       }
 
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth),
+        screen and (max-height: $tabletLandscapeHeight) {
         margin-left: -45px;
       }
 
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth),
+        screen and (max-height: $tabletPortraitHeight) {
         margin-left: -35px;
       }
 
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth),
+        screen and (max-height: $mobileHeight) {
         margin-left: -30px;
       }
     }
     &:nth-child(2) {
       margin-left: 265px;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth),
+        screen and (max-height: $desktopHeight) {
         margin-left: 202px;
       }
 
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth),
+        screen and (max-height: $tabletLandscapeHeight) {
         margin-left: 163px;
       }
 
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth),
+        screen and (max-height: $tabletPortraitHeight) {
         margin-left: 116px;
       }
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth),
+        screen and (max-height: $mobileHeight) {
         margin-left: 52px;
       }
     }
     &:nth-child(3) {
       margin-left: 5px;
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth),
+        screen and (max-height: $mobileHeight) {
         margin-left: 2px;
       }
     }
     &:nth-child(4) {
       margin-left: 178px;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth),
+        screen and (max-height: $desktopHeight) {
         margin-left: 133px;
       }
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth),
+        screen and (max-height: $tabletLandscapeHeight) {
         margin-left: 108px;
       }
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth),
+        screen and (max-height: $tabletPortraitHeight) {
         margin-left: 76px;
       }
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth),
+        screen and (max-height: $mobileHeight) {
         margin-left: 0px;
       }
     }
@@ -98,25 +117,29 @@
     top: 98px;
     left: 0;
     height: 100px;
-    background-color: #ff7d09;
+    background-color: $orange;
     z-index: 0;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth),
+      screen and (max-height: $desktopHeight) {
       top: 75px;
       height: 76px;
     }
 
-    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+    @media screen and (max-width: $tabletLandscapeWidth),
+      screen and (max-height: $tabletLandscapeHeight) {
       top: 61px;
       height: 60px;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth),
+      screen and (max-height: $tabletPortraitHeight) {
       top: 43px;
       height: 44px;
     }
 
-    @media screen and (max-width: 526px), screen and (max-height: 618px) {
+    @media screen and (max-width: $mobileWidth),
+      screen and (max-height: $mobileHeight) {
       top: 27px;
       height: 28px;
     }

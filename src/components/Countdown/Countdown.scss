@@ -1,3 +1,5 @@
+@import "../../styles/global.scss";
+
 .countdown {
   width: 100%;
   height: 100%;
@@ -13,20 +15,20 @@
     position: relative;
     justify-content: center;
 
-    @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+    @media screen and (max-width: $desktopWidth), screen and (max-height: $desktopHeight) {
       width: 140px;
     }
 
-    @media screen and (max-width: 848px), screen and (max-height: 822px) {
+    @media screen and (max-width: $tabletLandscapeWidth), screen and (max-height: $tabletLandscapeHeight) {
       width: 100px;
     }
 
-    @media screen and (max-width: 706px), screen and (max-height: 728px) {
+    @media screen and (max-width: $tabletPortraitWidth), screen and (max-height: $tabletPortraitHeight) {
       width: 70px;
       margin-right: 24px;
     }
 
-    @media screen and (max-width: 526px), screen and (max-height: 618px) {
+    @media screen and (max-width: $mobileWidth), screen and (max-height: $mobileHeight) {
       width: 50px;
       margin-right: 10px;
     }
@@ -39,23 +41,23 @@
       height: 124px;
       width: 10px;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth), screen and (max-height: $desktopHeight) {
         height: 90px;
       }
 
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth), screen and (max-height: $tabletLandscapeHeight) {
         right: -20px;
         height: 72px;
         width: 8px;
       }
 
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth), screen and (max-height: $tabletPortraitHeight) {
         right: -13px;
         height: 46px;
         width: 6px;
       }
 
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth), screen and (max-height: $mobileHeight) {
         right: -6px;
         height: 30px;
         width: 4px;
@@ -71,19 +73,19 @@
       font-size: 72px;
       margin: 0;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth), screen and (max-height: $desktopHeight) {
         font-size: 50px;
       }
 
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth), screen and (max-height: $tabletLandscapeHeight) {
         font-size: 38px;
       }
 
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth), screen and (max-height: $tabletPortraitHeight) {
         font-size: 24px;
       }
 
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth), screen and (max-height: $mobileHeight) {
         font-size: 16px;
       }
     }
@@ -92,16 +94,16 @@
       font-size: 24px;
       margin: 0;
 
-      @media screen and (max-width: 1116px), screen and (max-height: 940px) {
+      @media screen and (max-width: $desktopWidth), screen and (max-height: $desktopHeight) {
         font-size: 22px;
       }
-      @media screen and (max-width: 848px), screen and (max-height: 822px) {
+      @media screen and (max-width: $tabletLandscapeWidth), screen and (max-height: $tabletLandscapeHeight) {
         font-size: 18px;
       }
-      @media screen and (max-width: 706px), screen and (max-height: 728px) {
+      @media screen and (max-width: $tabletPortraitWidth), screen and (max-height: $tabletPortraitHeight) {
         font-size: 12px;
       }
-      @media screen and (max-width: 526px), screen and (max-height: 618px) {
+      @media screen and (max-width: $mobileWidth), screen and (max-height: $mobileHeight) {
         font-size: 8px;
       }
     }

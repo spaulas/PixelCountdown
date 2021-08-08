@@ -1,25 +1,27 @@
+@import "../styles/global.scss";
+
 .App {
   background-image: url("../assets/PawPattern.png");
-  background-color: #ffcd59;
+  background-color: $orange-light;
   width: 100vw;
   height: 100vh;
-  min-height: 940px;
+  min-height: $desktopHeight;
   overflow: hidden;
   min-width: 320px;
 
-  @media screen and (max-width: 1116px), screen and (max-height: 940px) {
-    min-height: 822px;
+  @media screen and (max-width: $desktopWidth), screen and (max-height: $desktopHeight) {
+    min-height: $tabletLandscapeHeight;
   }
 
-  @media screen and (max-width: 848px), screen and (max-height: 822px) {
-    min-height: 728px;
+  @media screen and (max-width: $tabletLandscapeWidth), screen and (max-height: $tabletLandscapeHeight) {
+    min-height: $tabletPortraitHeight;
   }
 
-  @media screen and (max-width: 706px), screen and (max-height: 728px) {
-    min-height: 618px;
+  @media screen and (max-width: $tabletPortraitWidth), screen and (max-height: $tabletPortraitHeight) {
+    min-height: $mobileHeight;
   }
 
-  @media screen and (max-width: 526px), screen and (max-height: 618px)  {
+  @media screen and (max-width: $mobileWidth), screen and (max-height: $mobileHeight) {
     min-height: 502px;
   }
 }

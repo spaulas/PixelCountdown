@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./App.scss";
 import CountdownPage from "../pages/CountdowPage/CountdownPage";
 import WelcomePage from "../pages/WelcomePage/WelcomePage";

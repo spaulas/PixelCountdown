@@ -1,6 +1,5 @@
-import React from "react";
-import "./Placard.scss";
 import Countdown from "../Countdown/Countdown";
+import "./Placard.scss";
 
 const Placard = ({ timer }) => {
   return (

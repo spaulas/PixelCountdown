@@ -1,12 +1,17 @@
-import React from "react";
 import TimelineElement from "./TimelineElement/TimelineElement";
-import "./Timeline.scss";
+import {
+  DAY,
+  TOTAL_DAYS,
+  FIRST_ELEM_TIME,
+  SECOND_ELEM_TIME,
+  THIRD_ELEM_TIME,
+  FOURTH_ELEM_TIME,
+} from "../../constants/time";
 import sushiPlus from "../../assets/BeaglePlus.png";
 import womb from "../../assets/Womb.png";
 import born from "../../assets/Born.png";
 import pixel from "../../assets/JackRussellFace.png";
-
-const TOTAL_DAYS = 166;
+import "./Timeline.scss";
 
 const Timeline = ({ distance }) => {
   const timelineElements = [
@@ -14,30 +19,30 @@ const Timeline = ({ distance }) => {
       image: sushiPlus,
       title: "Sushi is too alone!",
       date: "12/01/2021",
-      active: distance > 14206462520,
+      active: distance > FIRST_ELEM_TIME,
     },
     {
       image: womb,
       title: "Lima is pregnant!",
       date: "29/03/2021",
-      active: distance > 8251275920,
+      active: distance > SECOND_ELEM_TIME,
     },
     {
       image: born,
       title: "Pixel is born!",
       date: "29/04/2021",
-      active: distance > 6001538760,
+      active: distance > THIRD_ELEM_TIME,
     },
     {
       image: pixel,
       title: "Welcome Pixel!",
       date: "27/05/2021",
-      active: distance > 46352160,
+      active: distance > FOURTH_ELEM_TIME,
     },
   ];
 
   const getWidth = () => {
-    const missingDays = TOTAL_DAYS - Math.floor(distance / (1000 * 3600 * 24));
+    const missingDays = TOTAL_DAYS - Math.floor(distance / DAY);
     return (missingDays / TOTAL_DAYS) * 100;
   };
 
